@@ -13,7 +13,7 @@ field: document.querySelectorAll(".field"),
   seconds: document.querySelector('span[data-seconds]'),
   datePicker: document.querySelector('#datetime-picker'),
 };
-
+console.log(refs.field)
 let choosedDate = null;
 let currentTime = null;
 
@@ -22,6 +22,20 @@ refs.startButton.addEventListener('click', onStartTimerButtonClick);
 refs.timerField.style.display = "flex";
 refs.timerField.style.columnGap = "30px";
 refs.timerField.style.fontSize = "30px";
+console.log(refs.timerField)
+
+// for (let i = 0; i < refs.field.length; i += 1) {
+//   refs.field[i].style.display = "flex";
+//   refs.field[i].style.flexDirection = "column";
+//   refs.field[i].style.alignItems = "center";
+
+// }
+
+refs.field.forEach((element) => {
+  element.style.display = "flex";
+  element.style.flexDirection = "column";
+  element.style.alignItems = "center";
+})
 
 
 const options = {

@@ -16,7 +16,7 @@ img {
   display: block;
   max-width: 100%;
 }
-
+/* 
 .field {
   display: flex;
   flex-direction: column;
@@ -31,4 +31,4 @@ img {
 .label {
   text-transform: uppercase;
   font-size: 15px;
-}
+} */
